@@ -229,7 +229,10 @@ function addItems(){
     <div class="delete"><img src="./images/icon-delete.svg" alt=""></div>
     
 </div>`
+if(parseInt(numCount.textContent)){
     cartInfo.append(div)
+ }
+   
    
     
     if(counter.textContent){
@@ -277,6 +280,16 @@ function addItems(){
         
         
     }
+    // const div = document.createElement('div')
+    // div.className='submit-cart'
+
+    // div.innerHTML=`<div class="submit-cart">Checkout</div>`
+    cartInfo.append(div)
+    cartInfo.remove(div)
+    if(parseInt(counter.textContent)){
+        cartInfo.appendChild(div)
+    }
+
     
    
 } 

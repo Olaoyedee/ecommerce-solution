@@ -137,19 +137,20 @@ body {
   display: grid;
   place-items: center;
 }
-.change::before {
-  content: "";
+.change::after {
+  content: " ";
   position: absolute;
   right: 0px;
   width: 100%;
   height: 10vh;
-  border: 2px solid hsl(26, 100%, 55%);
+  border: 1px solid hsl(26, 100%, 55%);
   border-radius: 10px;
   transition: all 800ms;
-
   background-color: hsl(25, 100%, 94%);
-  /* display: none; */
-}
+  display: block; 
+
+} 
+
 
 .pic1 {
   width: 30%;
@@ -180,7 +181,7 @@ body {
   border-radius: 10px;
 }
 
-/* slide show code Ends above */
+/* slide show code Ends above
 
 header {
   max-width: 100%;
@@ -241,15 +242,6 @@ header {
   color: hsl(219, 9%, 45%);
 }
 
-.counter {
-  height: 30px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: hsl(26, 100%, 55%);
-  color: black;
-  padding: 0.2rem;
-  vertical-align: top;
-}
 
 .profile-links {
   display: flex;
@@ -257,6 +249,38 @@ header {
   align-items: center;
   width: 10%;
 }
+.place-counter {
+  width: 50%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-evenly;
+  
+ 
+ }
+ 
+ .counter {
+  font-family: "Kumbh Sans", sans-serif;
+   height: 15px;
+   width: 25px;
+   border-radius: 5px;
+   background-color: hsl(26, 100%, 55%);
+   border: 1px solid hsl(26, 100%, 55%);
+   color: navy;
+   vertical-align: top;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  margin-top: -10px;
+  margin-left: -20px;
+   /* display: grid;
+   place-items: center;
+   align-items: center; */
+   /* vertical-align: top; */
+  
+  
+  
+   
+ }
 
 .user {
   height: 30px;
@@ -336,12 +360,12 @@ main {
   right: 0px;
   width: 100%;
   height: 10vh;
-  border: 2px solid hsl(26, 100%, 55%);
-  border-radius: 10px;
+  border: 1px solid hsl(26, 100%, 55%);
   border-radius: 10px;
   background-color: hsl(25, 100%, 94%, 0.75);
   display: block;
 }
+ 
 
 .img1 {
   background-image: url("./images/image-product-1-thumbnail.jpg");
@@ -382,6 +406,7 @@ main {
 
 .product-company {
   /* border: 1px solid yellow; */
+
   line-height: 20px;
   letter-spacing: 0.2rem;
   font-size: medium;
