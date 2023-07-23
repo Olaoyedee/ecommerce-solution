@@ -468,7 +468,7 @@ main {
   position: absolute;
   top: 10%;
   left: 60%; 
-
+  z-index: 5000 !important;
   display: none;
 }
 .carthead{
