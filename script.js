@@ -211,12 +211,12 @@ function countDown(){
 
 
 function addItems(){
-   
+    counter =document.querySelector('.counter')
     counter.textContent=parseInt(counter.textContent)+parseInt(numCount.textContent)
     numCount.textContent===parseInt(numCount.textContent)
     price.textContent===parseInt(price.textContent)
     counter.textContent===parseInt(counter.textContent)
-   
+  
     let totalamount=parseInt(price.textContent) * parseInt(numCount.textContent)
     
     const div = document.createElement('div')
@@ -257,7 +257,7 @@ if(parseInt(numCount.textContent)){
     const cartModal =document.querySelector('.cart-modal')
    
     const main = document.querySelector('main')
-    // const checkout =document.querySelector('.submit-cart')
+    const checkout =document.querySelector('.submit-cart')
     main.addEventListener('click', cartoff)
     function cartoff(){
         cartModal.style.display='none'

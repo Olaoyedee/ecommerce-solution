@@ -151,6 +151,20 @@ body {
 
 } 
 
+/* .change:hover::after {
+  content: " ";
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 10vh;
+  border: 1px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
+  transition: all 800ms;
+  background-color: hsl(25, 100%, 94%);
+  display: block; 
+
+}  */
+
 
 .pic1 {
   width: 30%;
@@ -232,14 +246,51 @@ header {
   width: 50%;
   /* color:  hsl(219, 9%, 45%); */
   transition: ease-in-out 2000ms;
+
 }
 .navlinks .link-container li {
   display: inline-block;
   padding-right: 1.5em;
   /* color:   hsl(219, 9%, 45%); */
 }
+
+.fun-nav-link{
+  position: relative;
+}
+.fun-nav-link::after,
+.fun-nav-link::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(26, 100%, 55%);
+  transform: translateY(1px);
+  transform: scaleX(0);
+  transition: transform 0.35s;
+}
+.fun-nav-link::before{
+  top: -3px;
+  transform-origin: left;
+
+}
+.fun-nav-link::after{
+  bottom: -45px;
+}
+
+.fun-nav-link:hover::after,
+.fun-nav-link:hover::before{
+  transform: scaleX(1);
+  transform: translateY(1px);
+}
+
+
 .links a {
   color: hsl(219, 9%, 45%);
+}
+.links:hover{
+  transform: scale(1.123);
+  transform: translateY(-2px);
 }
 
 
@@ -272,6 +323,7 @@ header {
    justify-content: center;
   margin-top: -10px;
   margin-left: -20px;
+  
    /* display: grid;
    place-items: center;
    align-items: center; */
@@ -285,7 +337,7 @@ header {
 .user {
   height: 30px;
   width: 30px;
-  border: 1px solid black;
+  border: 2px solid hsl(26, 100%, 55%);
   border-radius: 50%;
   background-image: url("./images/image-avatar.png");
   background-size: cover;
@@ -355,6 +407,17 @@ main {
 }
 
 .change2::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 10vh;
+  border: 1px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
+  background-color: hsl(25, 100%, 94%, 0.75);
+  display: block;
+}
+.small-image:hover::after {
   content: "";
   position: absolute;
   right: 0px;
@@ -469,9 +532,13 @@ main {
 }
 .add-to-cart {
   display: inline-block;
-
+  box-shadow: 0px 10px 30px 8px hsl(26, 100%, 55%);
   border: none;
   background-color: inherit;
+}
+.add-to-cart:hover{
+  /* filter: brightness(1.1); */
+  transform: scale(1.115);
 }
 .add-to-cart img {
   padding-right: 15px;
@@ -497,20 +564,20 @@ main {
   display: none;
 }
 .carthead{
+  
   height: 10vh;
   width: 100%;
-  border-bottom: 1px solid hsl(223, 64%, 98%);
+  border-bottom: 0.1px solid hsl(220, 13%, 13%);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 
 }
-/* .carthead p{
-   margin-left: 1rem;
-   justify-content: center;
-   align-items: center;
+.carthead p{
+   margin-left: 3.75rem;
 
-} */
+
+}
 .cartempty{
   height: 20vh;
   width: 100%;
@@ -598,11 +665,11 @@ main {
 @media (min-width: 320px) and (max-width: 575px) {
   /* .navbar{
     
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 100%;
+    max-width: 100%;
   } */
   .cart-modal{
-    height: ;
+   
     width: 80vw;
     z-index: 6000 !important;
     position: absolute;
