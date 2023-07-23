@@ -256,9 +256,9 @@ if(parseInt(numCount.textContent)){
     const cartempty=document.querySelector('.cartempty')
     const cartModal =document.querySelector('.cart-modal')
    
-    const main = document.querySelector('main')
-    const checkout =document.querySelector('.submit-cart')
-    main.addEventListener('click', cartoff)
+    const body = document.querySelector('body')
+    // const checkout =document.querySelector('.submit-cart')
+    body.addEventListener('click', cartoff)
     function cartoff(){
         cartModal.style.display='none'
     }
