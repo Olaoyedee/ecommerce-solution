@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Kumbh+Sans:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="slide-container ">
+            <div class="slidesmargin">
+                <div class="slide-contain">
+                    <svg class="close-slide" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                            fill-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="pic slideIn pic1"></div>
+                        <div class="pic pic2"></div>
+                        <div class="pic pic3"></div>
+                        <div class="pic pic4"></div>
+                    </div>
+                    <div class="flex-containersm">
+                        <div class="small-image small change img1"></div>
+                        <div class="small-image small img2"></div>
+                        <div class="small-image small img3"></div>
+                        <div class="small-image small img4"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="preview">
+                <div class="next">
+                    <img src="./images/icon-next.svg" alt="">
+                </div>
+                <div class="prev">
+                    <img src="./images/icon-previous.svg" alt="">
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- <div class="preview">
+            <div class="next">
+                <img src="./images/icon-next.svg" alt="" >
+            </div>
+            <div class="prev">
+                <img src="./images/icon-previous.svg" alt="" >
+            </div>
+            
+            
+            
+        </div> -->
+
+        <nav class="navbar">
+            <div class="hamburger">
+                <img src="./images/icon-menu.svg" alt="">
+            </div>
+            <div class="logo">
+                <div><img src="./images/logo.svg" alt=""></div>
+            </div>
+            <div class="navlinks">
+                <ul class="link-container">
+                    <li class="links"><a href="#">Collections</a></li>
+                    <li class="links"><a href="#">Men</a></li>
+                    <li class="links"><a href="#">Women</a></li>
+                    <li class="links"><a href="#">About</a></li>
+                    <li class="links"><a href="#">Contact</a></li>
+                    <div class="close-icon">
+                        <img src="./images/icon-close.svg" alt="">
+                    </div>
+                </ul>
+
+                <div class="profile-links">
+                    <div>
+                        <img class="cart" src="./images/icon-cart.svg" alt="">
+                        <span class="counter">0</span>
+                    </div>
+                    <div class="user"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="product-section">
+
+            <div class="product-image">
+
+                <div class="mainpageslide">
+                    <!-- <div class="zero-display  bigimage-one"></div> -->
+                    <div class=" zero-display mobilearrow big-image empty"></div>
+                    <div class="zero-display mobilearrow bigimage-two"></div>
+                    <div class="zero-display mobilearrow bigimage-three"></div>
+                    <div class="zero-display mobilearrow bigimage-four"></div>
+                </div>
+
+
+
+                <div class="flex-small-image">
+                    <div class="small-image small2 change2 img1"></div>
+                    <div class="small-image small2 change2 img2"></div>
+                    <div class="small-image small2 change2 img3"></div>
+                    <div class="small-image small2 change2 img4"></div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="mini-product-container">
+                    <div class="product-company">
+                        <p> Sneaker Company</p>
+                    </div>
+                    <div class="product-name">
+                        <h1>Fall Limited Edition Sneakers</h1>
+                    </div>
+                    <div class="product-description">
+                        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+                            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    </div>
+                    <div class="product-price">
+                        <div class="price-display">
+                            <div class="price">
+                                <h2>$125.00</h2>
+                            </div>
+                            <div class="product-discount">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <div class="product-old-price">
+                            <p>$250.00</p>
+                        </div>
+                    </div>
+
+                    <div class="counter-submit">
+                        <div class="counter-up-down">
+                            <div class="minus"><img src="./images/icon-minus.svg" alt=""></div>
+                            <div class="num-count">
+                                <h4>0</h4>
+                            </div>
+                            <div class="add"><img src="./images/icon-plus.svg" alt=""></div>
+
+                        </div>
+                        <div class="submit">
+                            <button class="add-to-cart">
+                                <img style="color: white;" src="./images/icon-cart.svg" alt=""><span>Add to cart</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+            
+            <div class="cart-modal">
+                <div class="carthead">
+                    <p>Cart</p>
+                </div>
+                <div class="cartempty">
+                    <p>YOUR CART IS EMPTY</p>
+                </div>
+                <div class="cartinfo">
+                    <div class="cartdetails  cart-details-display">
+                        <div class="thumbnail"></div>
+                        <div class="info">
+                            <p>Fall Limited Edition Sneakers</p>
+                            <p>$<span class="amount">125</span> x <span class="itemsPicked"></span> <span
+                                class="space">$<span class="totalprice"></span></span></p>
+                        </div>
+                        <div class="delete"><img src="./images/icon-delete.svg" alt=""></div>
+                    
+                    </div>
+                    
+                </div>
+                <!-- <div class="submit-cart">Checkout</div> -->
+                
+            
+
+            </div>
+           
+        
+    </main>
+    <!-- well i didnt start up really well with my structures  so i had to quickly add this code for mobile view cause going back would require alot/ -->
+    <section class="mobile">
+         
+        <div class="arrow-mobile-slide">
+            <div class="arrow-forward">
+                <img src="./images/icon-next.svg" alt="">
+            </div>
+            <div class="arrowbackward">
+                <img src="./images/icon-previous.svg" alt="">
+            
+            </div>
+         
+
+
+        </div>
+    
+
+    </section>
+
+</body>
+
+</html>
