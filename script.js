@@ -211,12 +211,14 @@ function countDown(){
 
 
 function addItems(){
-    counter =document.querySelector('.counter')
+    
     counter.textContent=parseInt(counter.textContent)+parseInt(numCount.textContent)
     numCount.textContent===parseInt(numCount.textContent)
     price.textContent===parseInt(price.textContent)
     counter.textContent===parseInt(counter.textContent)
-  
+   if(parseInt(numCount.textContent)){
+    counter.style.display='flex'
+   }
     let totalamount=parseInt(price.textContent) * parseInt(numCount.textContent)
     
     const div = document.createElement('div')
@@ -308,6 +310,10 @@ function cartRemove(e) {
      counter.textContent = parseInt(counter.textContent)-parseInt(itemsPicked.textContent)
    
     cartInfo.removeChild(removeMe)
+
+    if(counter.textContent==0){
+        counter.style.display='none'
+    }
    
 
 }

@@ -323,7 +323,7 @@ header {
    justify-content: center;
   margin-top: -10px;
   margin-left: -20px;
-  
+  display: none;
    /* display: grid;
    place-items: center;
    align-items: center; */
