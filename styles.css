@@ -267,7 +267,7 @@ header {
   background-color: hsl(26, 100%, 55%);
   transform: translateY(1px);
   transform: scaleX(0);
-  transition: transform 0.35s;
+  transition: transform 0.25s;
 }
 .fun-nav-link::before{
   top: -3px;
@@ -280,18 +280,15 @@ header {
 
 .fun-nav-link:hover::after,
 .fun-nav-link:hover::before{
-  transform: scaleX(1);
-  transform: translateY(1px);
+  
+  transform: none;
 }
 
 
 .links a {
   color: hsl(219, 9%, 45%);
 }
-.links:hover{
-  transform: scale(1.123);
-  transform: translateY(-2px);
-}
+
 
 
 .profile-links {
@@ -668,6 +665,25 @@ main {
     min-width: 100%;
     max-width: 100%;
   } */
+
+  
+  .fun-nav-link:hover::after,
+  .fun-nav-link:hover::before{
+    transform: scaleX(0);
+    transform: 0;
+  }
+  
+  
+  .links a {
+    color: hsl(219, 9%, 45%);
+  }
+  /* .links:hover{
+    transform: scale(1.123);
+    transform: translateY(-2px);
+  } */
+
+
+
   .cart-modal{
    
     width: 80vw;
@@ -843,6 +859,12 @@ main {
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
 
+  .fun-nav-link:hover::after,
+  .fun-nav-link:hover::before{
+    transform: scaleX(0);
+    transform: 0;
+  }
+
   .arrow-mobile-slide{
     display: block;
   }
@@ -994,6 +1016,11 @@ main {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .fun-nav-link:hover::after,
+  .fun-nav-link:hover::before{
+    transform: scaleX(0);
+    transform: 0;
+  }
   .pic1 {
     width: 30%;
     height: 50vh;
